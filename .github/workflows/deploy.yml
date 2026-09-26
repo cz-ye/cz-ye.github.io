@@ -43,6 +43,8 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
+      - name: Check rendered pages and publication authors
+        run: bundle exec ruby bin/check_site.rb
       - name: Save the rendered website for review
         uses: actions/upload-artifact@v4
         with:
@@ -54,3 +56,18 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site/
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
