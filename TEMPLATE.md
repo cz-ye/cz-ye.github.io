@@ -1,0 +1,11 @@
+# Template provenance
+
+This site was created from [alshedivat/al-folio](https://github.com/alshedivat/al-folio), commit [`2fec8d3a9c99450328cee59a6a6114e26055d86e`](https://github.com/alshedivat/al-folio/tree/2fec8d3a9c99450328cee59a6a6114e26055d86e).
+
+The al-folio plugin versions remain pinned in `Gemfile` and `Gemfile.lock`. Shared layouts, styles, icons, and light/dark mode come from the original plugin gems; no local runtime overrides were introduced.
+
+The starter’s demonstration content, example assets, and upstream maintenance workflows were removed. Site-owned configuration, pages, social links, and GitHub Pages deployment were customized. The original MIT license is retained.
+
+Project names and summaries came from the public [cz-ye GitHub profile](https://github.com/cz-ye).
+
+Biography, education, contact details, and portrait are adapted from [Chengzhong Ye’s BCBI profile](https://bcbi.berkeley.edu/people/chengzhong-ye), supplied by the site owner. These are local, editable copies.
