@@ -10,6 +10,7 @@ Personal website for **https://cz-ye.github.io**, built with [al-folio](https://
 | Home page and biography                  | `_pages/about.md`          |
 | Projects                                 | `_pages/projects.md`       |
 | GitHub, email, and other profile links   | `_data/socials.yml`        |
+| Online CV                                | `_data/cv.yml`             |
 | Publications                             | `_bibliography/papers.bib` |
 
 The biography, education, email, affiliation, and portrait are adapted from [your Berkeley BCBI profile](https://bcbi.berkeley.edu/people/chengzhong-ye). Project descriptions come from your public GitHub repositories. Edit any of these directly; the site does not automatically synchronize with those sources.
@@ -23,7 +24,9 @@ profile:
   image_circular: false
 ```
 
-Publications are prepared but unpublished. Add your BibTeX entries, then set both `published: true` and `nav: true` in `_pages/publications.md`. You can set `selected_papers: true` on the home page after marking selected BibTeX entries with `selected = {true}`.
+Publications are generated from `_bibliography/papers.bib`. Mark entries with `selected = {true}` to feature them on the home page. The online CV is generated from `_data/cv.yml`. Both were populated from the supplied CV; update these files whenever your CV changes.
+
+The local `cv/` folder is reference material and is excluded from Git and the website build. The website’s CV page is an editable professional summary. To offer a downloadable PDF later, place the intended public version in `assets/pdf/` and set `cv_pdf` in `_pages/cv.md`.
 
 ## Preview locally
 

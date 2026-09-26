@@ -9,3 +9,5 @@ The starter’s demonstration content, example assets, and upstream maintenance 
 Project names and summaries came from the public [cz-ye GitHub profile](https://github.com/cz-ye).
 
 Biography, education, contact details, and portrait are adapted from [Chengzhong Ye’s BCBI profile](https://bcbi.berkeley.edu/people/chengzhong-ye), supplied by the site owner. These are local, editable copies.
+
+Publication details, research experience, software contributions, education dates, awards, and reviewing service were transcribed from the site owner’s supplied CV (`cv/main.tex` and its rendered PDF). The original reference folder is excluded from the published repository and site.

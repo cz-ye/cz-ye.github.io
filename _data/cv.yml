@@ -1,0 +1,102 @@
+cv:
+  name: Chengzhong Ye
+  label: BCBI Postdoctoral Fellow
+  email: czye@berkeley.edu
+  location: UC Berkeley & UCSF
+  summary: Statistical and machine learning methods for genomic sequence modeling, genetic variant interpretation, and single-cell
+    analysis.
+  social_networks:
+    - network: GitHub
+      username: cz-ye
+  sections:
+    Academic Appointments:
+      - company: Bakar Computational Biomedicine Initiative, UC Berkeley & UCSF
+        position: BCBI Postdoctoral Fellow
+        start_date: 2026-09
+        end_date: present
+        summary: "Supervisor: Yun S. Song. Developing DNA sequence models to interpret human genetic variation and investigate
+          complex disease."
+    Education:
+      - institution: University of California, Berkeley
+        area: Statistics
+        studyType: Ph.D.
+        start_date: 2021-08
+        end_date: 2026-08
+        highlights:
+          - "Advisors: Yun S. Song and Bin Yu."
+          - "Dissertation: Self-supervised biological sequence models and application to genome interpretation."
+      - institution: Tsinghua University
+        studyType: M.D.
+        start_date: 2018-08
+        end_date: 2021-06
+      - institution: University of Melbourne
+        area: Bioinformatics
+        studyType: M.Res.
+        start_date: 2016-09
+        end_date: 2018-08
+        highlights:
+          - "Advisors: Terence P. Speed and Gordon K. Smyth."
+          - "Thesis: Improving differential expression analysis of single-cell RNA-seq data: method and application."
+      - institution: Tsinghua University
+        area: Clinical Medicine
+        studyType: B.S.
+        start_date: 2013-08
+        end_date: 2016-06
+    Research Experience:
+      - company: University of California, Berkeley, Department of Statistics
+        position: Graduate Student Researcher
+        start_date: 2022-06
+        end_date: 2026-08
+        summary: "Supervisors: Yun S. Song and Bin Yu."
+        highlights:
+          - Developed GPN-Star models and benchmarks for genomic functional constraint.
+          - Contributed to genomic language models trained on multispecies alignments.
+          - Co-developed CPT-1 for cross-protein transfer learning and variant interpretation.
+          - Studied genetic interactions and hypertrophic cardiomyopathy.
+      - company: University of Pennsylvania, The Wharton School
+        position: Research Assistant, Department of Statistics
+        start_date: 2019-01
+        end_date: 2019-07
+        summary: "Supervisor: Nancy R. Zhang."
+        highlights:
+          - Conceptualized cTPnet for imputing cell-surface protein abundance from single-cell transcriptomes.
+          - Evaluated denoising approaches for single-cell RNA-seq in SAVER-X.
+      - company: Walter and Eliza Hall Institute of Medical Research
+        position: Master of Research Student, Bioinformatics Division
+        start_date: 2016-09
+        end_date: 2018-08
+        summary: "Research supervisors: Terence P. Speed and Agus Salim."
+        highlights:
+          - Developed the DECENT differential expression model and R package.
+          - Analyzed tumor-infiltrating T-cell populations in breast cancer using single-cell RNA-seq.
+    Selected Awards:
+      - title: Bakar Computational Biomedicine Initiative Postdoctoral Fellowship
+        date: "2026"
+      - title: Evelyn Fix Award
+        date: "2026"
+        summary: Best dissertation in applied statistics.
+      - title: STATGEN Travel Award
+        date: "2025"
+      - title: Erich Lehmann Fund Award in Statistics
+        date: "2024"
+      - title: UC Berkeley Outstanding Graduate Student Instructor Award
+        date: "2023"
+      - title: Melbourne Research Scholarship
+        date: 2016–2018
+      - title: Gold Medal, China National Biology Olympiad
+        date: "2012"
+        summary: 5th nationally.
+    Teaching:
+      - name: "STAT 215A: Statistical Models: Theory and Application"
+        date: Fall 2023
+        summary: "University of California, Berkeley. Course instructor: Bin Yu."
+      - name: "STAT 133: Concepts in Computing with Data"
+        date: Spring 2022
+        summary: "University of California, Berkeley. Course instructor: Gaston Sanchez Trujillo."
+    Professional Service:
+      - name: Conference reviewing
+        summary: NeurIPS (2026); ICLR (2025, 2026).
+      - name: Workshop reviewing
+        summary: ICLR Gen² (2026); NeurIPS AI4Science (2025); ICLR AI4NA (2025); ICLR MLGenX (2024, 2025).
+      - name: Journal reviewing
+        summary: npj Antimicrobials and Resistance (2025); npj Precision Oncology (2025); Artificial Intelligence Review (2025).
