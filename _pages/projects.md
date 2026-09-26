@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Research software for genomics and single-cell analysis.
-nav: true
+nav: false
 nav_order: 3
 ---
 
