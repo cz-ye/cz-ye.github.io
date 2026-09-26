@@ -2,6 +2,8 @@
 
 This is the personal site **https://cz-ye.github.io**, created from the al-folio v1 template. The repository is **cz-ye/cz-ye.github.io**. This is a user site, so `_config.yml` must retain `baseurl: ""`.
 
+Search indexing is intentionally disabled while the site is under revision. Preserve `search_engine_indexing: false` until the site owner explicitly asks to make the site searchable. `_plugins/search_visibility.rb` adds `noindex, nofollow` to all rendered HTML pages. Keep crawling allowed in `robots.txt` so engines can read the directive; do not submit the site for indexing during this period.
+
 ## Content
 
 - `_pages/about.md`: biography, profile settings, and selected publications toggle.

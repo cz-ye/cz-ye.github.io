@@ -62,6 +62,10 @@ bundle exec ruby bin/check_site.rb
 
 ## Hosting
 
+Search indexing is currently disabled while the site is being edited. `_config.yml` sets `search_engine_indexing: false`, and the site plugin in `_plugins/search_visibility.rb` adds `noindex, nofollow` to every HTML page. The deployment check verifies that `noindex` is present. Keep crawling allowed in `robots.txt` so search engines can see the directive.
+
+The site remains accessible to anyone with the URL; this setting does not make it private. When the site owner is ready to make the site searchable, set `search_engine_indexing: true`, commit, and push. Search engines may take time to process either change.
+
 The repository is `cz-ye/cz-ye.github.io`. GitHub Actions builds the site using the versions pinned in `Gemfile.lock`, checks formatting, and retains a rendered preview artifact. GitHub Pages uses the **GitHub Actions** publishing source.
 
 Changes pushed to `main` are rebuilt automatically. Review the **Build and deploy site** workflow in the repository’s Actions tab for build and deployment status.

@@ -1,8 +1,10 @@
 require 'nokogiri'
 require 'uri'
 require 'bibtex'
+require 'yaml'
 
 root = File.expand_path('../_site', __dir__)
+config = YAML.safe_load(File.read(File.expand_path('../_config.yml', __dir__)), aliases: true)
 errors = []
 
 %w[index.html publications/index.html projects/index.html cv/index.html 404.html].each do |page|
@@ -11,6 +13,10 @@ end
 
 Dir.glob(File.join(root, '**', '*.html')).each do |file|
   document = Nokogiri::HTML(File.read(file))
+  if config['search_engine_indexing'] == false
+    directives = document.css('head meta[name="robots"]').flat_map { |meta| meta['content'].to_s.downcase.split(/[\s,]+/) }
+    errors << "Missing noindex directive: #{file.delete_prefix(root)}" unless directives.include?('noindex')
+  end
   document.css('[href], [src]').each do |element|
     value = element['href'] || element['src']
     next if value.nil? || value.empty? || value.start_with?('#', '//')
@@ -40,4 +46,4 @@ end
 end
 
 abort errors.join("\n") unless errors.empty?
-puts 'Rendered pages, publication authors, local resources, and source exclusions passed.'
+puts 'Rendered pages, search visibility, publication authors, local resources, and source exclusions passed.'
