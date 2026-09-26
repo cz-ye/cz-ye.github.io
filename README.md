@@ -57,6 +57,7 @@ npm run lint:prettier
 npm run lint:style-contract
 bundle exec al-folio upgrade audit --no-fail
 JEKYLL_ENV=production bundle exec jekyll build
+bundle exec ruby bin/check_site.rb
 ```
 
 ## Hosting
