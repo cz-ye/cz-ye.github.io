@@ -36,6 +36,7 @@ jobs:
         run: |
           npm run lint:prettier
           npm run lint:style-contract
+          bundle exec al-folio upgrade overrides audit --fail-on-stale
           bundle exec al-folio upgrade audit --no-fail
       - name: Install image tools
         run: sudo apt-get update && sudo apt-get install -y imagemagick

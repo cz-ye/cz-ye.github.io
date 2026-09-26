@@ -21,4 +21,4 @@ __pycache__/
 *.pyc
 
 # Local reference material supplied by the site owner
-cv/
+/cv/

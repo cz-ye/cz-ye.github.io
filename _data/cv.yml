@@ -1,5 +1,5 @@
 cv:
-  name: Chengzhong Ye
+  name: Chengzhong Ye (叶丞中)
   email: czye@berkeley.edu
   social_networks:
     - network: GitHub
@@ -7,7 +7,9 @@ cv:
   sections:
     Current Position:
       - label: BCBI Postdoctoral Fellow
-        details: Bakar Computational Biomedicine Initiative, UC Berkeley & UCSF (September 2026–present).
+        institution: Bakar Computational Biomedicine Initiative
+        affiliation: UC Berkeley & UCSF
+        dates: September 2026–present
     Education:
       - institution: University of California, Berkeley
         area: Statistics
@@ -47,9 +49,9 @@ cv:
         date: "2016"
     Teaching:
       - label: "STAT 215A: Statistical Models: Theory and Application (Fall 2023)"
-        details: University of California, Berkeley.
+        details: UC Berkeley.
       - label: "STAT 133: Concepts in Computing with Data (Spring 2022)"
-        details: University of California, Berkeley.
+        details: UC Berkeley.
   address:
     street: 3406 Gateway Building, 2300 Hearst Ave
     city: Berkeley
