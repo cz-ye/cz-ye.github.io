@@ -11,6 +11,12 @@
 {% endcomment %}
 
 <style>
+  .cv-contact td:first-child {
+    padding-right: 0.75rem !important;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
   .cv-current-position {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -105,7 +111,7 @@
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
-            <table class="table table-cv table-sm table-borderless">
+            <table class="table table-cv table-sm table-borderless cv-contact">
               {% if cv.name %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
@@ -256,7 +262,7 @@
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
             {% assign basics = site.data.resume.basics %}
-            <table class="table table-cv table-sm table-borderless">
+            <table class="table table-cv table-sm table-borderless cv-contact">
               {% if basics.name %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
