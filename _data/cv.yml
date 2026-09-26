@@ -9,40 +9,13 @@ cv:
     - network: GitHub
       username: cz-ye
   sections:
-    Academic Appointments:
+    Experience:
       - company: Bakar Computational Biomedicine Initiative, UC Berkeley & UCSF
         position: BCBI Postdoctoral Fellow
         start_date: 2026-09
         end_date: present
         summary: "Supervisor: Yun S. Song. Developing DNA sequence models to interpret human genetic variation and investigate
           complex disease."
-    Education:
-      - institution: University of California, Berkeley
-        area: Statistics
-        studyType: Ph.D.
-        start_date: 2021-08
-        end_date: 2026-08
-        highlights:
-          - "Advisors: Yun S. Song and Bin Yu."
-          - "Dissertation: Self-supervised biological sequence models and application to genome interpretation."
-      - institution: Tsinghua University
-        studyType: M.D.
-        start_date: 2018-08
-        end_date: 2021-06
-      - institution: University of Melbourne
-        area: Bioinformatics
-        studyType: M.Res.
-        start_date: 2016-09
-        end_date: 2018-08
-        highlights:
-          - "Advisors: Terence P. Speed and Gordon K. Smyth."
-          - "Thesis: Improving differential expression analysis of single-cell RNA-seq data: method and application."
-      - institution: Tsinghua University
-        area: Clinical Medicine
-        studyType: B.S.
-        start_date: 2013-08
-        end_date: 2016-06
-    Research Experience:
       - company: University of California, Berkeley, Department of Statistics
         position: Graduate Student Researcher
         start_date: 2022-06
@@ -69,7 +42,33 @@ cv:
         highlights:
           - Developed the DECENT differential expression model and R package.
           - Analyzed tumor-infiltrating T-cell populations in breast cancer using single-cell RNA-seq.
-    Selected Awards:
+    Education:
+      - institution: University of California, Berkeley
+        area: Statistics
+        studyType: Ph.D.
+        start_date: 2021-08
+        end_date: 2026-08
+        highlights:
+          - "Advisors: Yun S. Song and Bin Yu."
+          - "Dissertation: Self-supervised biological sequence models and application to genome interpretation."
+      - institution: Tsinghua University
+        studyType: M.D.
+        start_date: 2018-08
+        end_date: 2021-06
+      - institution: University of Melbourne
+        area: Bioinformatics
+        studyType: M.Res.
+        start_date: 2016-09
+        end_date: 2018-08
+        highlights:
+          - "Advisors: Terence P. Speed and Gordon K. Smyth."
+          - "Thesis: Improving differential expression analysis of single-cell RNA-seq data: method and application."
+      - institution: Tsinghua University
+        area: Clinical Medicine
+        studyType: B.S.
+        start_date: 2013-08
+        end_date: 2016-06
+    Awards:
       - title: Bakar Computational Biomedicine Initiative Postdoctoral Fellowship
         date: "2026"
       - title: Evelyn Fix Award
@@ -87,16 +86,14 @@ cv:
         date: "2012"
         summary: 5th nationally.
     Teaching:
-      - name: "STAT 215A: Statistical Models: Theory and Application"
-        date: Fall 2023
-        summary: "University of California, Berkeley. Course instructor: Bin Yu."
-      - name: "STAT 133: Concepts in Computing with Data"
-        date: Spring 2022
-        summary: "University of California, Berkeley. Course instructor: Gaston Sanchez Trujillo."
+      - label: "STAT 215A: Statistical Models: Theory and Application (Fall 2023)"
+        details: "University of California, Berkeley. Course instructor: Bin Yu."
+      - label: "STAT 133: Concepts in Computing with Data (Spring 2022)"
+        details: "University of California, Berkeley. Course instructor: Gaston Sanchez Trujillo."
     Professional Service:
-      - name: Conference reviewing
-        summary: NeurIPS (2026); ICLR (2025, 2026).
-      - name: Workshop reviewing
-        summary: ICLR Gen² (2026); NeurIPS AI4Science (2025); ICLR AI4NA (2025); ICLR MLGenX (2024, 2025).
-      - name: Journal reviewing
-        summary: npj Antimicrobials and Resistance (2025); npj Precision Oncology (2025); Artificial Intelligence Review (2025).
+      - label: Conference reviewing
+        details: NeurIPS (2026); ICLR (2025, 2026).
+      - label: Workshop reviewing
+        details: ICLR Gen² (2026); NeurIPS AI4Science (2025); ICLR AI4NA (2025); ICLR MLGenX (2024, 2025).
+      - label: Journal reviewing
+        details: npj Antimicrobials and Resistance (2025); npj Precision Oncology (2025); Artificial Intelligence Review (2025).
