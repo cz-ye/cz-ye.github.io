@@ -75,8 +75,23 @@
     line-height: 1.5;
   }
 
+  .cv .date-column {
+    transform: none;
+  }
+
   .cv .cv-course strong {
     font-weight: 600;
+  }
+
+  @media (max-width: 575.98px) {
+    .cv .date-column {
+      width: 100%;
+      text-align: left;
+    }
+
+    .cv .cv-period {
+      white-space: nowrap;
+    }
   }
 </style>
 
@@ -224,7 +239,15 @@
                     <li class="list-group-item">
                       <div class="row">
                         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-                          <span class="badge font-weight-bold danger-color-dark align-middle cv-period">{{ entry.dates }}</span>
+                          <table class="table-cv">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="badge font-weight-bold danger-color-dark align-middle cv-period">{{ entry.dates }}</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
                           <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.label }}</h6>
@@ -249,7 +272,15 @@
                     <li class="list-group-item">
                       <div class="row">
                         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-                          <span class="badge font-weight-bold danger-color-dark align-middle cv-period">{{ entry.term }}</span>
+                          <table class="table-cv">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="badge font-weight-bold danger-color-dark align-middle cv-period">{{ entry.term }}</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
                           <h6 class="cv-course ml-1 ml-md-4">
