@@ -7,7 +7,7 @@ cv:
   sections:
     Current Position:
       - label: BCBI Postdoctoral Fellow
-        institution: Bakar Computational Biomedicine Initiative
+        institution: Bakar Computational Biomedicine Institute
         affiliation: UC Berkeley & UCSF
         dates: September 2026–present
     Education:
@@ -48,13 +48,17 @@ cv:
         date: "2023"
       - title: Melbourne Research Scholarship
         date: "2016"
+      - title: Tsinghua Freshman Scholarship
+        date: "2013–2015"
       - title: Gold Medal, China National Biology Olympiad
         date: "2012"
     Teaching:
-      - label: "STAT 215A: Statistical Models: Theory and Application"
+      - code: STAT 215A
+        label: "Statistical Models: Theory and Application"
         details: UC Berkeley
         term: Fall 2023
-      - label: "STAT 133: Concepts in Computing with Data"
+      - code: STAT 133
+        label: Concepts in Computing with Data
         details: UC Berkeley
         term: Spring 2022
   address:
