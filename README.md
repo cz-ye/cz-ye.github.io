@@ -26,7 +26,7 @@ profile:
 
 Publications are generated from `_bibliography/papers.bib`. Mark entries with `selected = {true}` to feature them on the home page. The online CV is generated from `_data/cv.yml`. Both were populated from the supplied CV; update these files whenever your CV changes.
 
-For equal-contribution authors, append `*` to the surname in BibTeX (for example, `Ye*, Chengzhong`); the theme renders it as a superscript. The CV’s current position uses separate `label`, `institution`, `affiliation`, and `dates` fields. Its display is customized in `_includes/cv/render.liquid`, tracked in `.al-folio-overrides.yml`; review this override when updating the CV plugin.
+Append `*` to equal-contribution authors’ surnames in BibTeX (for example, `Ye*, Chengzhong`) and `†` to documented (co-)senior authors’ surnames (for example, `Yu†, B.`); the theme renders these as superscripts. Do not add publication footnotes or `annotation` popovers. The CV’s current position uses separate `label`, `institution`, `affiliation`, and `dates` fields; teaching entries use `label`, `details`, and `term`. Awards may have an optional `summary` below the title. The CV display is customized in `_includes/cv/render.liquid`, tracked in `.al-folio-overrides.yml`; review this override when updating the CV plugin.
 
 The local `cv/` folder is reference material and is excluded from Git and the website build. The website’s CV page is an editable professional summary. To offer a downloadable PDF later, place the intended public version in `assets/pdf/` and set `cv_pdf` in `_pages/cv.md`.
 

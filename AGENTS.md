@@ -17,11 +17,13 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 
 The site owner’s local `cv/` folder is reference material. It is ignored by Git, Prettier, and Jekyll. Preserve it. Professional content adapted from it lives in the files above. A downloadable PDF is not currently configured.
 
+Use boldface sparingly. CV section headings and award items use regular weight. Publications use `*` for equal contribution and `†` for documented (co-)senior authors, with no footnotes or annotation popovers.
+
 ## Template conventions
 
 Use configuration and content changes before considering runtime overrides. The layout and styling come from the pinned `al_folio_*` plugin gems. Keep `Gemfile` and `_config.yml` plugin lists consistent. If introducing a local override, record it using `bundle exec al-folio upgrade overrides audit` and review the resulting manifest.
 
-The CV renderer recognizes `Experience`, `Education`, and `Awards` sections. The reviewed override in `_includes/cv/render.liquid` labels the mailing address and renders `Current Position` using `label`, `institution`, `affiliation`, and `dates`. Other custom section entries must use `label` / `details` or `bullet`; unsupported entry shapes can silently render empty sections.
+The reviewed override in `_includes/cv/render.liquid` formats the CV with regular-weight section headings, separate dates, and no sidebar. `Current Position` uses `label`, `institution`, `affiliation`, and `dates`; `Teaching` uses `label`, `details`, and `term`. Education and awards retain their existing YAML fields. Other custom section entries must use `label` / `details` or `bullet`; unsupported entry shapes can silently render empty sections.
 
 The upstream guides in `docs/` describe the original demo as well as the template. Their `/al-folio` paths and demo-specific integration tests do not describe this customized user site.
 

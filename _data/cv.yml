@@ -41,17 +41,22 @@ cv:
         date: "2026"
       - title: Evelyn Fix Award
         date: "2026"
+        summary: Best dissertation in applied statistics.
       - title: STATGEN Travel Award
         date: "2025"
       - title: UC Berkeley Outstanding Graduate Student Instructor Award
         date: "2023"
       - title: Melbourne Research Scholarship
         date: "2016"
+      - title: Gold Medal, China National Biology Olympiad
+        date: "2012"
     Teaching:
-      - label: "STAT 215A: Statistical Models: Theory and Application (Fall 2023)"
-        details: UC Berkeley.
-      - label: "STAT 133: Concepts in Computing with Data (Spring 2022)"
-        details: UC Berkeley.
+      - label: "STAT 215A: Statistical Models: Theory and Application"
+        details: UC Berkeley
+        term: Fall 2023
+      - label: "STAT 133: Concepts in Computing with Data"
+        details: UC Berkeley
+        term: Spring 2022
   address:
     street: 3406 Gateway Building, 2300 Hearst Ave
     city: Berkeley

@@ -11,51 +11,125 @@
 {% endcomment %}
 
 <style>
-  .cv-contact td:first-child {
-    padding-right: 0.75rem !important;
-    vertical-align: top;
-    white-space: nowrap;
+  .cv-section {
+    margin-top: 1.75rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--global-divider-color);
   }
 
-  .cv-current-position {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 0.75rem 1.5rem;
-    margin: 0.5rem 0;
-    padding: 0.25rem 0 0.25rem 1rem;
-    border-left: 3px solid var(--global-theme-color);
+  .cv-section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
   }
 
-  .cv-current-position h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
+  .cv .cv-section-title {
+    margin: 0 0 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.4;
   }
 
-  .cv-current-position p {
-    margin: 0.35rem 0 0;
+  .cv .cv-contact {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cv .cv-contact td {
+    padding: 0.25rem 0;
+    vertical-align: top;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .cv .cv-contact .cv-contact-label {
+    width: 6rem;
+    padding-right: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .cv-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.5rem 2rem;
+    font-weight: 400;
+  }
+
+  .cv-entry + .cv-entry {
+    margin-top: 1.5rem;
+  }
+
+  .cv-entry-content {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .cv .cv-entry-title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 400;
     line-height: 1.5;
   }
 
-  .cv-current-position .position-institution {
+  .cv-entry p {
+    margin: 0.25rem 0 0;
     font-size: 0.95rem;
+    line-height: 1.6;
   }
 
-  .cv-current-position .position-affiliation {
-    font-size: 0.9rem;
-  }
-
-  .cv-current-position .position-dates {
+  .cv-entry .cv-entry-date {
+    grid-column: 2;
+    grid-row: 1;
     margin-top: 0.1rem;
     color: var(--global-text-color-light);
     font-size: 0.875rem;
     white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .cv-entry .cv-details {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .cv-details li + li {
+    margin-top: 0.25rem;
+  }
+
+  .cv-awards .cv-entry + .cv-entry {
+    margin-top: 0.75rem;
+  }
+
+  .cv-awards .cv-entry-title {
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+
+  .cv-awards .cv-award-description {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
   }
 
   @media (max-width: 640px) {
-    .cv-current-position {
+    .cv-entry {
       grid-template-columns: minmax(0, 1fr);
+      gap: 0.25rem;
+    }
+
+    .cv-entry-content {
+      grid-row: 2;
+    }
+
+    .cv-entry .cv-entry-date {
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0;
     }
   }
 </style>
@@ -109,37 +183,37 @@
 
         <!-- Header/Contact Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Contact Information</h3>
             <table class="table table-cv table-sm table-borderless cv-contact">
               {% if cv.name %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
+                  <td class="cv-contact-label">Name</td>
+                  <td class="cv-contact-value">{{ cv.name }}</td>
                 </tr>
               {% endif %}
               {% if cv.label %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
+                  <td class="cv-contact-label">Professional Title</td>
+                  <td class="cv-contact-value">{{ cv.label }}</td>
                 </tr>
               {% endif %}
               {% if cv.email %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
+                  <td class="cv-contact-label">Email</td>
+                  <td class="cv-contact-value">{{ cv.email }}</td>
                 </tr>
               {% endif %}
               {% if cv.phone %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
+                  <td class="cv-contact-label">Phone</td>
+                  <td class="cv-contact-value">{{ cv.phone }}</td>
                 </tr>
               {% endif %}
               {% if cv.address %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Address</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
+                  <td class="cv-contact-label">Address</td>
+                  <td class="cv-contact-value">
                     {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
                     {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
                     {% if cv.address.region %}{{ cv.address.region }} {% endif %}
@@ -149,8 +223,8 @@
               {% endif %}
               {% if cv.website %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
+                  <td class="cv-contact-label">Website</td>
+                  <td class="cv-contact-value">
                     <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
                   </td>
                 </tr>
@@ -161,8 +235,8 @@
 
         <!-- Summary -->
         {% if cv.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Professional Summary</h3>
             <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -175,8 +249,8 @@
         {% assign combined_experience = exp | concat: vol | al_cv_sort_by_date %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Experience</h3>
             <div>
               {% assign entries = combined_experience %}
               {% include cv/experience.liquid %}
@@ -195,26 +269,65 @@
           {% endif %}
 
           <a class="anchor" id="{{ section_title | slugify }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">{{ section_title }}</h3>
             <div>
               {% if section_title == 'Current Position' %}
                 {% for entry in section_entries %}
-                  <div class="cv-current-position">
-                    <div>
-                      <h4>{{ entry.label }}</h4>
-                      <p class="position-institution">{{ entry.institution }}</p>
-                      <p class="position-affiliation">{{ entry.affiliation }}</p>
+                  <div class="cv-entry">
+                    <div class="cv-entry-content">
+                      <h4 class="cv-entry-title">{{ entry.label }}</h4>
+                      <p>{{ entry.institution }}</p>
+                      <p>{{ entry.affiliation }}</p>
                     </div>
-                    <p class="position-dates">{{ entry.dates }}</p>
+                    <p class="cv-entry-date">{{ entry.dates }}</p>
                   </div>
                 {% endfor %}
               {% elsif section_title == 'Education' %}
                 {% assign entries = section_entries | al_cv_sort_by_date %}
-                {% include cv/education.liquid %}
+                {% for entry in entries %}
+                  <div class="cv-entry">
+                    <div class="cv-entry-content">
+                      <h4 class="cv-entry-title">
+                        {{ entry.studyType -}}
+                        {%- if entry.area %} in {{ entry.area }}{% endif %}
+                      </h4>
+                      <p>{{ entry.institution }}</p>
+                      {% if entry.highlights %}
+                        <ul class="cv-details">
+                          {% for item in entry.highlights %}
+                            <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </div>
+                    <p class="cv-entry-date">{{ entry.start_date | split: '-' | first }}–{{ entry.end_date | split: '-' | first }}</p>
+                  </div>
+                {% endfor %}
               {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
-                {% assign entries = section_entries %}
-                {% include cv/awards.liquid %}
+                <div class="cv-awards">
+                  {% for entry in section_entries %}
+                    <div class="cv-entry">
+                      <div class="cv-entry-content">
+                        <h4 class="cv-entry-title">{{ entry.title }}</h4>
+                        {% if entry.summary %}
+                          <p class="cv-award-description">{{ entry.summary }}</p>
+                        {% endif %}
+                      </div>
+                      <p class="cv-entry-date">{{ entry.date }}</p>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% elsif section_title == 'Teaching' %}
+                {% for entry in section_entries %}
+                  <div class="cv-entry">
+                    <div class="cv-entry-content">
+                      <h4 class="cv-entry-title">{{ entry.label }}</h4>
+                      <p>{{ entry.details }}</p>
+                    </div>
+                    <p class="cv-entry-date">{{ entry.term }}</p>
+                  </div>
+                {% endfor %}
               {% elsif section_title == 'Publications' %}
                 {% assign entries = section_entries %}
                 {% include cv/publications.liquid %}
@@ -259,38 +372,38 @@
 
         <!-- Contact Information -->
         {% if site.data.resume.basics %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Contact Information</h3>
             {% assign basics = site.data.resume.basics %}
             <table class="table table-cv table-sm table-borderless cv-contact">
               {% if basics.name %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.name }}</td>
+                  <td class="cv-contact-label">Name</td>
+                  <td class="cv-contact-value">{{ basics.name }}</td>
                 </tr>
               {% endif %}
               {% if basics.label %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.label }}</td>
+                  <td class="cv-contact-label">Professional Title</td>
+                  <td class="cv-contact-value">{{ basics.label }}</td>
                 </tr>
               {% endif %}
               {% if basics.email %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.email }}</td>
+                  <td class="cv-contact-label">Email</td>
+                  <td class="cv-contact-value">{{ basics.email }}</td>
                 </tr>
               {% endif %}
               {% if basics.phone %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.phone }}</td>
+                  <td class="cv-contact-label">Phone</td>
+                  <td class="cv-contact-value">{{ basics.phone }}</td>
                 </tr>
               {% endif %}
               {% if basics.location %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Address</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
+                  <td class="cv-contact-label">Address</td>
+                  <td class="cv-contact-value">
                     {% if basics.location.address %}{{ basics.location.address }}, {% endif %}
                     {% if basics.location.city %}{{ basics.location.city }}, {% endif %}
                     {% if basics.location.region %}{{ basics.location.region }} {% endif %}
@@ -300,8 +413,8 @@
               {% endif %}
               {% if basics.url %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
+                  <td class="cv-contact-label">Website</td>
+                  <td class="cv-contact-value">
                     <a href="{{ basics.url }}" target="_blank">{{ basics.url }}</a>
                   </td>
                 </tr>
@@ -312,8 +425,8 @@
 
         <!-- Summary -->
         {% if site.data.resume.basics.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Professional Summary</h3>
             <p>{{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -325,8 +438,8 @@
         {% assign combined_experience = work | concat: vol | al_cv_sort_by_date %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Experience</h3>
             <div>
               {% assign entries = combined_experience %}
               {% include cv/experience.liquid %}
@@ -337,8 +450,8 @@
         <!-- Education -->
         {% if site.data.resume.education.size > 0 %}
           <a class="anchor" id="education"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Education</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Education</h3>
             <div>
               {% assign entries = site.data.resume.education | al_cv_sort_by_date %}
               {% include cv/education.liquid %}
@@ -349,8 +462,8 @@
         <!-- Awards -->
         {% if site.data.resume.awards.size > 0 %}
           <a class="anchor" id="awards"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Awards</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Awards</h3>
             <div>
               {% assign entries = site.data.resume.awards %}
               {% include cv/awards.liquid %}
@@ -361,8 +474,8 @@
         <!-- Publications -->
         {% if site.data.resume.publications.size > 0 %}
           <a class="anchor" id="publications"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Publications</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Publications</h3>
             <div>
               {% assign entries = site.data.resume.publications %}
               {% include cv/publications.liquid %}
@@ -373,8 +486,8 @@
         <!-- Skills -->
         {% if site.data.resume.skills.size > 0 %}
           <a class="anchor" id="skills"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Skills</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Skills</h3>
             <div>
               {% assign entries = site.data.resume.skills %}
               {% include cv/skills.liquid %}
@@ -385,8 +498,8 @@
         <!-- Languages -->
         {% if site.data.resume.languages.size > 0 %}
           <a class="anchor" id="languages"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Languages</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Languages</h3>
             <div>
               {% assign entries = site.data.resume.languages %}
               {% include cv/languages.liquid %}
@@ -397,8 +510,8 @@
         <!-- Interests -->
         {% if site.data.resume.interests.size > 0 %}
           <a class="anchor" id="interests"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Interests</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Interests</h3>
             <div>
               {% assign entries = site.data.resume.interests %}
               {% include cv/interests.liquid %}
@@ -409,8 +522,8 @@
         <!-- Certificates -->
         {% if site.data.resume.certificates.size > 0 %}
           <a class="anchor" id="certificates"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Certificates</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Certificates</h3>
             <div>
               {% assign entries = site.data.resume.certificates %}
               {% include cv/certificates.liquid %}
@@ -421,8 +534,8 @@
         <!-- Projects -->
         {% if site.data.resume.projects.size > 0 %}
           <a class="anchor" id="projects"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Projects</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">Projects</h3>
             <div>
               {% assign entries = site.data.resume.projects %}
               {% include cv/projects.liquid %}
@@ -433,8 +546,8 @@
         <!-- References -->
         {% if site.data.resume.references.size > 0 %}
           <a class="anchor" id="references"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">References</h3>
+          <div class="cv-section">
+            <h3 class="cv-section-title">References</h3>
             <div>
               {% assign entries = site.data.resume.references %}
               {% include cv/references.liquid %}
