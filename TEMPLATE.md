@@ -13,3 +13,5 @@ The initial biography, education, and contact details were adapted from [Chengzh
 Publication details, research experience, software contributions, education dates, awards, and reviewing service were transcribed from the site owner’s supplied CV (`cv/main.tex` and its rendered PDF). The original reference folder is excluded from the published repository and site.
 
 The abbreviated author list for the 2018 breast cancer T-cell publication was completed using Crossref metadata and the [publisher’s author list](https://www.nature.com/articles/s41591-018-0078-7).
+
+The 11 publication thumbnails in `assets/img/publication_preview/` were created with built-in GPT image generation at the site owner’s request. They are conceptual illustrations in a shared minimal style, not figures or experimental results taken from the papers. Their scientific sources and generation prompts are documented in [docs/PUBLICATION_IMAGES.md](docs/PUBLICATION_IMAGES.md). Thumbnails use al-folio’s existing BibTeX `preview` feature.
