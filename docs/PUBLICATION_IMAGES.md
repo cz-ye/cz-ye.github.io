@@ -6,7 +6,7 @@ The site owner requested actual paper figures in place of generated artwork. Ten
 
 Each paper’s `preview` field in `_bibliography/papers.bib` names its file in `assets/img/publication_preview/`. Selected Publications uses the same image. The native al-folio publication layout is unchanged. Figure proportions are preserved, with narrow white margins; this avoids squashing diagrams into a common aspect ratio. Figure files are lossless PNGs, downsampled to at most 900 × 760 pixels before adding margins. The original-resolution DECENT and T-cell panels are kept without upscaling. The journal cover is the original JPEG, displayed in full without cropping or recompression.
 
-Click-to-zoom remains disabled with `enable_medium_zoom: false`. Search indexing remains disabled.
+Click-to-zoom remains disabled with `enable_medium_zoom: false`. Search indexing is enabled at the site owner’s request.
 
 ## Sources and selection
 

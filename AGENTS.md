@@ -2,7 +2,7 @@
 
 This is the personal site **https://cz-ye.github.io**, created from the al-folio v1 template. The repository is **cz-ye/cz-ye.github.io**. This is a user site, so `_config.yml` must retain `baseurl: ""`.
 
-Search indexing is intentionally disabled while the site is under revision. Preserve `search_engine_indexing: false` until the site owner explicitly asks to make the site searchable. `_plugins/search_visibility.rb` adds `noindex, nofollow` to all rendered HTML pages. Keep crawling allowed in `robots.txt` so engines can read the directive; do not submit the site for indexing during this period.
+Search indexing is enabled at the site owner’s request. Preserve `search_engine_indexing: true` unless the owner asks to disable it. `_plugins/search_visibility.rb` adds `noindex, nofollow` only when that setting is false. Keep crawling allowed in `robots.txt` and retain its sitemap link.
 
 ## Content
 

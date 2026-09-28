@@ -19,7 +19,7 @@ apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL)
 
 url: https://cz-ye.github.io # the base hostname & protocol for your site
 baseurl: "" # User sites are served at the domain root.
-search_engine_indexing: false # Keep search engines from indexing the site while it is being edited.
+search_engine_indexing: true # Allow search engines to index the published site.
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
