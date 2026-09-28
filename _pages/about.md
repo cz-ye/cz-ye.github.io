@@ -45,7 +45,7 @@ latest_posts:
 
 I develop genomic sequence models to understand genetic variation and its impact on disease. More broadly, I am interested in using AI and machine learning to advance biomedical research.
 
-My current focus is on genomic language models, self-supervised deep learning models that learn from evolutionary data.
+My current focus is on genomic language models, self-supervised genomic sequence models that learn from evolutionary data.
 
 I am a Bakar Postdoctoral Fellow at the [Bakar Computational Biomedicine Institute](https://bcbi.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/) and [UCSF](https://www.ucsf.edu/). I received my Ph.D. in Statistics from UC Berkeley, advised by Professors [Yun S. Song](https://people.eecs.berkeley.edu/~yss/) and [Bin Yu](https://binyu.stat.berkeley.edu/). Before that, I trained in medicine at Tsinghua University, where I earned my M.D. and B.S.
 
