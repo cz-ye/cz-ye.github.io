@@ -43,7 +43,7 @@ latest_posts:
   }
 </style>
 
-I develop genomic sequence models to understand genetic variation and its impact on disease. More broadly, I am interested in using AI and machine learning to advance biomedical research.
+I develop genomic sequence models to understand genetic variation and its impact on disease. I am broadly interested in using AI and machine learning to advance biomedical research.
 
 My current focus is on genomic language models, self-supervised genomic sequence models that learn from evolutionary data.
 
