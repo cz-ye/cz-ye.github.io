@@ -23,3 +23,5 @@ nav_order: 2
 {% bibliography --group_by none --query @*[year<2021] %}
 
 </div>
+
+<p class="small text-muted"><a href="{{ '/figure-credits/' | relative_url }}">Figure credits</a></p>
