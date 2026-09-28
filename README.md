@@ -13,14 +13,14 @@ Personal website for **https://cz-ye.github.io**, built with [al-folio](https://
 | Online CV                                | `_data/cv.yml`             |
 | Publications                             | `_bibliography/papers.bib` |
 
-The biography, education, email, affiliation, and portrait are adapted from [your Berkeley BCBI profile](https://bcbi.berkeley.edu/people/chengzhong-ye). Project descriptions come from your public GitHub repositories. Edit any of these directly; the site does not automatically synchronize with those sources.
+The initial biography, education, email, and affiliation were adapted from [your Berkeley BCBI profile](https://bcbi.berkeley.edu/people/chengzhong-ye). The current About biography follows your revised draft, and the current portrait is your supplied `0U9A5846.jpeg`. Project descriptions come from your public GitHub repositories. Edit any of these directly; the site does not automatically synchronize with those sources.
 
 To replace the portrait, save your image to `assets/img/` and update the `profile` settings in `_pages/about.md`:
 
 ```yaml
 profile:
   align: right
-  image: portrait.png
+  image: 0U9A5846.jpeg
   image_circular: false
 ```
 

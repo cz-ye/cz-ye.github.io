@@ -11,7 +11,7 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 - `_bibliography/papers.bib`: publications; `selected = {true}` features a paper on the home page.
 - `_data/cv.yml`: the online CV, using the al-folio RenderCV data format.
 - `_data/socials.yml`: public professional contact links.
-- `assets/img/portrait.png`: portrait from the supplied Berkeley profile.
+- `assets/img/0U9A5846.jpeg`: current portrait supplied by the site owner.
 - `README.md`: editing, validation, and hosting instructions.
 - `TEMPLATE.md`: template and content provenance.
 
