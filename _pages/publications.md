@@ -18,7 +18,7 @@ nav_order: 2
 
 {% bibliography --query @*[year>=2021] %}
 
-<h2 class="bibliography">Before 2021</h2>
+<h2 class="bibliography">Earlier work</h2>
 
 {% bibliography --group_by none --query @*[year<2021] %}
 

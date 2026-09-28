@@ -24,7 +24,7 @@ profile:
   image_circular: false
 ```
 
-Publications are generated from `_bibliography/papers.bib`. Mark entries with `selected = {true}` to feature them on the home page. The publications page groups papers from 2021 onward by year and earlier papers together under “Before 2021”; this cutoff is configured in `_pages/publications.md`. The online CV is generated from `_data/cv.yml`. Both were populated from the supplied CV; update these files whenever your CV changes.
+Publications are generated from `_bibliography/papers.bib`. Mark entries with `selected = {true}` to feature them on the home page. The publications page groups papers from 2021 onward by year and earlier papers together under “Earlier work”; this cutoff is configured in `_pages/publications.md`. The online CV is generated from `_data/cv.yml`. Both were populated from the supplied CV; update these files whenever your CV changes.
 
 Append `*` to equal-contribution authors’ surnames in BibTeX (for example, `Ye*, Chengzhong`) and `†` to documented (co-)senior authors’ surnames (for example, `Yu†, B.`); the theme renders these as superscripts. Do not add publication footnotes or `annotation` popovers. The CV’s current position uses separate `label`, `institution`, `affiliation`, and `dates` fields; teaching entries use `code`, `label`, `details`, and `term`. Awards may have an optional `summary` below the title. The CV preserves al-folio’s cards and date badges, with selective bold titles and lighter supporting text. Its local customization is in `_includes/cv/render.liquid`, tracked in `.al-folio-overrides.yml`; review this override when updating the CV plugin.
 
