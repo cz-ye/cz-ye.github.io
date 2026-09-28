@@ -72,6 +72,24 @@
     "edits": "Extract selected figure/panel; preserve aspect ratio; downsample as needed; add narrow white margin."
   },
   {
+    "slug": "protein-pcs",
+    "authors": "Ronen et al. (2025)",
+    "title": "Stabilizing protein fitness predictors via the PCS framework",
+    "source_page": "https://openreview.net/forum?id=tC4PVCM7oI",
+    "figure": "1",
+    "description": "Complete PCS workflow for screening protein representations and ensembling predictions",
+    "source_terms": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).",
+    "source_asset": "https://openreview.net/pdf?id=tC4PVCM7oI",
+    "source_sha256": "ae810bb8fbf59f9927665e72645ddfb736db73bf244747bc193df1c5f8069a07",
+    "source_file": "protein-pcs.pdf",
+    "crop": [138, 72, 472, 223],
+    "coordinate_units": "PDF points",
+    "pdf_page": 3,
+    "image": "assets/img/publication_preview/protein-pcs-figure.png",
+    "dimensions": [936, 443],
+    "edits": "Extract complete Figure 1; preserve aspect ratio; downsample; add narrow white margin. Scientific content unchanged."
+  },
+  {
     "slug": "epistasis",
     "authors": "Behr et al. (2024)",
     "title": "Learning epistatic polygenic phenotypes with Boolean interactions",

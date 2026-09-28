@@ -25,6 +25,10 @@ Animal icons in this panel are credited in the paper to Berkahicon, from [Flatic
 
 [Source](https://arxiv.org/abs/2503.03773v2), Figure 1. PhyloGPN modeling framework; complete figure from the author preprint. [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Figure content unchanged; rendered and scaled.
 
+### Ronen et al. (2025): Stabilizing protein fitness predictors via the PCS framework
+
+[Source](https://openreview.net/forum?id=tC4PVCM7oI), Figure 1. Complete PCS workflow for screening protein representations and ensembling predictions, extracted from page 3 of the [EXAIT workshop paper](https://openreview.net/pdf?id=tC4PVCM7oI). [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Figure content unchanged; rendered and scaled.
+
 ### Behr et al. (2024): Learning epistatic polygenic phenotypes with Boolean interactions
 
 [Source](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298906), Figure 1. Gene- and variant-level interaction discovery workflow. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
