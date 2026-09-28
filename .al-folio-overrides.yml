@@ -6,5 +6,5 @@ overrides:
     gem_version: 1.0.2
     upstream_path: templates/cv/render.liquid
     upstream_sha256: eaff444ab8d7407008e422ecc4be3c56c586fe2397951d54dbfb6aef7fc2eac0
-    local_sha256: a5c9b5e20edf2255b5a8aaf8d6f6b8836d337af7fb887d1eca4626f20838b892
+    local_sha256: 2bbc6101d71dcd2b0bf003bd348a6a59a04e0a51c115d653f352be599098cae5
     acknowledged_at: "2026-09-27"

@@ -2,7 +2,7 @@
 
 This site was created from [alshedivat/al-folio](https://github.com/alshedivat/al-folio), commit [`2fec8d3a9c99450328cee59a6a6114e26055d86e`](https://github.com/alshedivat/al-folio/tree/2fec8d3a9c99450328cee59a6a6114e26055d86e).
 
-The al-folio plugin versions remain pinned in `Gemfile` and `Gemfile.lock`. Shared layouts, styles, icons, and light/dark mode come from the original plugin gems. A reviewed override of the CV renderer in `_includes/cv/render.liquid` preserves the template’s section cards, date badges, and education/awards renderers while adjusting typography, contact labels, current position, and teaching; its upstream version and checksums are tracked in `.al-folio-overrides.yml`.
+The al-folio plugin versions remain pinned in `Gemfile` and `Gemfile.lock`. Shared layouts, styles, icons, and light/dark mode come from the original plugin gems. A reviewed override of the CV renderer in `_includes/cv/render.liquid` follows the classic al-folio layout demonstrated at [canallee.github.io/cv](https://canallee.github.io/cv/): compact section cards, padded rows with dividers, date badges, and bulleted awards. It restores CV-scoped styles missing from the v1 runtime and retains the gem’s education renderer, with personalized contact, current position, and teaching entries. Its upstream version and checksums are tracked in `.al-folio-overrides.yml`.
 
 The starter’s demonstration content, example assets, and upstream maintenance workflows were removed. Site-owned configuration, pages, social links, and GitHub Pages deployment were customized. The original MIT license is retained.
 
