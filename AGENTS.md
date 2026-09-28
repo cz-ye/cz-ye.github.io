@@ -9,6 +9,7 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 - `_pages/about.md`: biography, profile settings, and selected publications toggle.
 - `_pages/projects.md`: research software and project links.
 - `_bibliography/papers.bib`: publications; `selected = {true}` features a paper on the home page.
+- `assets/img/publication_preview/`: publication artwork; current `preview` fields use the abstract `-art.jpg` versions. Sources and prompts are in `docs/PUBLICATION_IMAGES.md`.
 - `_data/cv.yml`: the online CV, using the al-folio RenderCV data format.
 - `_data/socials.yml`: public professional contact links.
 - `assets/img/0U9A5846.jpeg`: current portrait supplied by the site owner.
@@ -18,6 +19,8 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 The site owner’s local `cv/` folder is reference material. It is ignored by Git, Prettier, and Jekyll. Preserve it. Professional content adapted from it lives in the files above. A downloadable PDF is not currently configured.
 
 Keep the CV visually consistent with al-folio’s section cards and date badges. Use boldface selectively for role/degree titles and course codes, with lighter supporting text. Keep section headings light and award titles regular. Publications use `*` for equal contribution and `†` for documented (co-)senior authors, with no footnotes or annotation popovers.
+
+The owner requested static website images without click-to-zoom. Keep `enable_medium_zoom: false` in `_config.yml`; do not reintroduce image enlargement when changing the artwork.
 
 ## Template conventions
 
