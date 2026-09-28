@@ -14,7 +14,7 @@ Click-to-zoom remains disabled with `enable_medium_zoom: false`. Search indexing
 
 | Paper                 | Asset                                                                                                      | Figure | Selection                                                                              |
 | --------------------- | ---------------------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------- |
-| Ye et al. (2026)      | [gpn-star-figure.png](../assets/img/publication_preview/gpn-star-figure.png)                               | 1      | Complete Figure 1: GPN-Star architecture, evolutionary scales, and evaluation summary  |
+| Ye et al. (2026)      | [gpn-star-full-figure.png](../assets/img/publication_preview/gpn-star-full-figure.png)                     | 1      | Complete Figure 1: GPN-Star architecture, evolutionary scales, and evaluation summary  |
 | Benegas et al. (2025) | [genomic-language-models-cover.jpg](../assets/img/publication_preview/genomic-language-models-cover.jpg)   | Cover  | Trends in Genetics, April 2025: Advancing genomics with DNA language models            |
 | Benegas et al. (2025) | [gpn-msa-figure.png](../assets/img/publication_preview/gpn-msa-figure.png)                                 | 1c     | GPN-MSA model architecture                                                             |
 | Albors et al. (2025)  | [phylogpn-figure.png](../assets/img/publication_preview/phylogpn-figure.png)                               | 1      | PhyloGPN modeling framework; complete figure from the author preprint                  |

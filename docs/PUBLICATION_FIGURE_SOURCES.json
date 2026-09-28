@@ -13,7 +13,7 @@
     "crop": null,
     "coordinate_units": "pixels",
     "pdf_page": null,
-    "image": "assets/img/publication_preview/gpn-star-figure.png",
+    "image": "assets/img/publication_preview/gpn-star-full-figure.png",
     "dimensions": [936, 569],
     "edits": "Use complete publisher Figure 1 without cropping; preserve aspect ratio; downsample; add narrow white margin. Scientific content unchanged."
   },
