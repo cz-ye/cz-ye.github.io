@@ -5,17 +5,17 @@ title: Figure credits
 nav: false
 ---
 
-Publication thumbnails reproduce figures from the corresponding papers or author preprints. Selected panels are cropped as indicated below, scaled without changing their proportions, and given a small white margin. The scientific diagrams, labels, and plotted data are preserved. Full captions and context are available at the linked sources.
+Publication thumbnails reproduce figures from the corresponding papers or author preprints, and the journal cover featuring the gLM review. Selected panels are cropped as indicated below, scaled without changing their proportions, and given a small white margin. The scientific diagrams, labels, and plotted data are preserved. Full captions and context are available at the linked sources.
 
 ### Ye et al. (2026): Predicting genome-wide functional constraints with GPN-Star
 
-[Source](https://www.nature.com/articles/s41586-026-11005-5), Figure 1b. Three evolutionary scales for human variant prediction. Publisher figure; see source terms.
+[Source](https://www.nature.com/articles/s41586-026-11005-5), Figure 1a. GPN-Star model architecture. Publisher figure; see source terms.
 
 Animal icons in this panel are credited in the paper to Berkahicon, from [Flaticon](https://www.flaticon.com/).
 
 ### Benegas et al. (2025): Genomic language models: opportunities and challenges
 
-[Source](https://arxiv.org/abs/2407.11435v2), Figure 1. Training and applications of genomic language models; complete figure from the author preprint. [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Figure content unchanged; rendered and scaled.
+[Trends in Genetics, Volume 41, Issue 4 (April 2025)](https://www.sciencedirect.com/journal/trends-in-genetics/vol/41/issue/4), cover: “Advancing genomics with DNA language models.” Cover image obtained from [Gonzalo Benegas’s publication page](https://gonzalobenegas.github.io/publications/) and reproduced in full without alteration. Cover rights remain with the respective rights holders; see publisher terms.
 
 ### Benegas et al. (2025): A DNA language model based on multispecies alignment predicts the effects of genome-wide variants
 
@@ -53,4 +53,4 @@ Animal icons in this panel are credited in the paper to Berkahicon, from [Flatic
 
 [Source](https://www.nature.com/articles/s41591-018-0078-7), Figure 2b. T-cell clusters from single-cell RNA sequencing. Publisher figure; see source terms.
 
-Figure copyrights and source licenses remain with their respective authors and rights holders.
+Figure and cover copyrights and source licenses remain with their respective authors and rights holders.
