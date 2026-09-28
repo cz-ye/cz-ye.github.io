@@ -6,7 +6,7 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 
 ## Content
 
-- `_pages/about.md`: biography, profile settings, and selected publications toggle.
+- `_pages/about.md`: biography, profile settings, and selected publications toggle. The page renders the native social-links tag below the bio, before Selected Publications, with 3rem icons; `social: false` suppresses the theme’s default bottom placement.
 - `_pages/projects.md`: research software and project links.
 - `_bibliography/papers.bib`: publications; `selected = {true}` features a paper on the home page.
 - `assets/img/publication_preview/`: publication thumbnails; the owner now prefers actual paper figures to generated artwork. Current `-figure.png` files use complete figures or selected panels, preserving scientific content and proportions. Sources and crop details are in `docs/PUBLICATION_IMAGES.md` and `docs/PUBLICATION_FIGURE_SOURCES.json`; source attribution is in `_pages/figure_credits.md`. Earlier generated versions are retained. All 11 publications have sourced thumbnails; the gLM review uses its journal cover (`genomic-language-models-cover.jpg`), and GPN-Star uses the full Figure 1.

@@ -10,7 +10,7 @@ profile:
   image_circular: false
 
 selected_papers: true
-social: true
+social: false # The icons are rendered below the bio, before Selected Publications.
 
 announcements:
   enabled: false
@@ -19,6 +19,15 @@ latest_posts:
 ---
 
 <style>
+  .social.about-social {
+    clear: both;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .social.about-social .contact-icons {
+    font-size: 3rem;
+  }
+
   @media (min-width: 576px) {
     .profile {
       max-width: 220px;
@@ -38,4 +47,8 @@ I develop genomic sequence models to understand genetic variation and its impact
 
 My current focus is on genomic language models, self-supervised deep learning models that learn from evolutionary data.
 
-I am a Bakar Postdoctoral Fellow at the [Bakar Computational Biomedicine Institute](https://bcbi.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/) and [UCSF](https://www.ucsf.edu/). I received my Ph.D. in Statistics from UC Berkeley, advised by Professors [Yun S. Song](https://people.eecs.berkeley.edu/~yss/) and [Bin Yu](https://binyu.stat.berkeley.edu/). Before that, I trained in medicine at Tsinghua University, where I earned my M.D. and B.S. I also hold an M.Res. from the University of Melbourne.
+I am a Bakar Postdoctoral Fellow at the [Bakar Computational Biomedicine Institute](https://bcbi.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/) and [UCSF](https://www.ucsf.edu/). I received my Ph.D. in Statistics from UC Berkeley, advised by Professors [Yun S. Song](https://people.eecs.berkeley.edu/~yss/) and [Bin Yu](https://binyu.stat.berkeley.edu/). Before that, I trained in medicine at Tsinghua University, where I earned my M.D. and B.S.
+
+<div class="social about-social">
+  <div class="contact-icons">{% social_links %}</div>
+</div>
