@@ -9,7 +9,7 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 - `_pages/about.md`: biography, profile settings, and selected publications toggle.
 - `_pages/projects.md`: research software and project links.
 - `_bibliography/papers.bib`: publications; `selected = {true}` features a paper on the home page.
-- `assets/img/publication_preview/`: publication artwork; current `preview` fields use the abstract `-art.jpg` versions. Sources and prompts are in `docs/PUBLICATION_IMAGES.md`.
+- `assets/img/publication_preview/`: publication artwork; current `preview` fields use the abstract `-sparse.jpg` versions. Sources and prompts are in `docs/PUBLICATION_IMAGES.md`. Favor sparse, legible curves and varied palettes; the reference artwork is only general inspiration, not an exact visual specification.
 - `_data/cv.yml`: the online CV, using the al-folio RenderCV data format.
 - `_data/socials.yml`: public professional contact links.
 - `assets/img/0U9A5846.jpeg`: current portrait supplied by the site owner.
