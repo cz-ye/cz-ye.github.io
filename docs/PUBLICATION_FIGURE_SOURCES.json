@@ -4,18 +4,18 @@
     "authors": "Ye et al. (2026)",
     "title": "Predicting genome-wide functional constraints with GPN-Star",
     "source_page": "https://www.nature.com/articles/s41586-026-11005-5",
-    "figure": "1a",
-    "description": "GPN-Star model architecture",
+    "figure": "1",
+    "description": "Complete Figure 1: GPN-Star architecture, evolutionary scales, and evaluation summary",
     "source_terms": "Publisher figure; see source terms.",
     "source_asset": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-11005-5/MediaObjects/41586_2026_11005_Fig1_HTML.png",
     "source_sha256": "15fcbaaff790d0aacd8405bbbbb0b365961f040c6aaca4e28f49b3884eccb876",
     "source_file": "gpn-star-original.png",
-    "crop": [0, 0, 2161, 679],
+    "crop": null,
     "coordinate_units": "pixels",
     "pdf_page": null,
     "image": "assets/img/publication_preview/gpn-star-figure.png",
-    "dimensions": [936, 319],
-    "edits": "Extract selected figure/panel; preserve aspect ratio; downsample as needed; add narrow white margin."
+    "dimensions": [936, 569],
+    "edits": "Use complete publisher Figure 1 without cropping; preserve aspect ratio; downsample; add narrow white margin. Scientific content unchanged."
   },
   {
     "slug": "genomic-language-models",

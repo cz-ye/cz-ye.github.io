@@ -9,7 +9,7 @@ Search indexing is intentionally disabled while the site is under revision. Pres
 - `_pages/about.md`: biography, profile settings, and selected publications toggle.
 - `_pages/projects.md`: research software and project links.
 - `_bibliography/papers.bib`: publications; `selected = {true}` features a paper on the home page.
-- `assets/img/publication_preview/`: publication thumbnails; the owner now prefers actual paper figures to generated artwork. Current `-figure.png` files use complete figures or selected panels, preserving scientific content and proportions. Sources and crop details are in `docs/PUBLICATION_IMAGES.md` and `docs/PUBLICATION_FIGURE_SOURCES.json`; source attribution is in `_pages/figure_credits.md`. Earlier generated versions are retained. All 11 publications have sourced thumbnails; the gLM review uses its journal cover (`genomic-language-models-cover.jpg`), and GPN-Star uses Figure 1a.
+- `assets/img/publication_preview/`: publication thumbnails; the owner now prefers actual paper figures to generated artwork. Current `-figure.png` files use complete figures or selected panels, preserving scientific content and proportions. Sources and crop details are in `docs/PUBLICATION_IMAGES.md` and `docs/PUBLICATION_FIGURE_SOURCES.json`; source attribution is in `_pages/figure_credits.md`. Earlier generated versions are retained. All 11 publications have sourced thumbnails; the gLM review uses its journal cover (`genomic-language-models-cover.jpg`), and GPN-Star uses the full Figure 1.
 - `_data/cv.yml`: the online CV, using the al-folio RenderCV data format.
 - `_data/socials.yml`: public professional contact links.
 - `assets/img/0U9A5846.jpeg`: current portrait supplied by the site owner.

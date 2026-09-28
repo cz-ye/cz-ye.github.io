@@ -9,9 +9,9 @@ Publication thumbnails reproduce figures from the corresponding papers or author
 
 ### Ye et al. (2026): Predicting genome-wide functional constraints with GPN-Star
 
-[Source](https://www.nature.com/articles/s41586-026-11005-5), Figure 1a. GPN-Star model architecture. Publisher figure; see source terms.
+[Source](https://www.nature.com/articles/s41586-026-11005-5), Figure 1 (all panels). GPN-Star architecture, evolutionary scales, and evaluation summary. Publisher figure; see source terms.
 
-Animal icons in this panel are credited in the paper to Berkahicon, from [Flaticon](https://www.flaticon.com/).
+Animal icons in this figure are credited in the paper to Berkahicon, from [Flaticon](https://www.flaticon.com/).
 
 ### Benegas et al. (2025): Genomic language models: opportunities and challenges
 
