@@ -18,6 +18,16 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  @media (max-width: 575.98px) {
+    .profile img {
+      display: block;
+      max-width: 240px;
+      margin-inline: auto;
+    }
+  }
+</style>
+
 I develop genomic sequence models to understand genetic variation and its impact on disease. More broadly, I am interested in using artificial intelligence and machine learning to advance biomedical research.
 
 My current focus is on genomic language models: self-supervised deep learning models that learn from evolutionary data.
