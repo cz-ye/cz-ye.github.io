@@ -19,7 +19,7 @@
   }
 
   .cv-page article {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .cv .card-title {
@@ -94,6 +94,7 @@
 
   .cv .date-column .table-cv td {
     padding: 0;
+    border: 0;
     line-height: 1.5;
   }
 
@@ -111,9 +112,12 @@
     font-weight: 600;
   }
 
-  @media (min-width: 768px) {
-    .cv .row > .col-md-10 {
-      margin-top: 0 !important;
+  /* Match the runtime's layer so its important spacing utility can be reset. */
+  @layer components {
+    @media (min-width: 768px) {
+      .cv .row > .col-md-10 {
+        margin-top: 0 !important;
+      }
     }
   }
 
