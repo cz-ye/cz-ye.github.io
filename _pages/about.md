@@ -19,10 +19,16 @@ latest_posts:
 ---
 
 <style>
+  @media (min-width: 576px) {
+    .profile {
+      max-width: 220px;
+    }
+  }
+
   @media (max-width: 575.98px) {
     .profile img {
       display: block;
-      max-width: 240px;
+      max-width: 200px;
       margin-inline: auto;
     }
   }
