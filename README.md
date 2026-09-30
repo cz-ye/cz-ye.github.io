@@ -15,6 +15,8 @@ Personal website for **https://cz-ye.github.io**, built with [al-folio](https://
 
 The initial biography, education, email, and affiliation were adapted from [your Berkeley BCBI profile](https://bcbi.berkeley.edu/people/chengzhong-ye). The current About biography follows your revised draft, and the current portrait is your supplied `0U9A5846.jpeg`. Project descriptions come from your public GitHub repositories. Edit any of these directly; the site does not automatically synchronize with those sources.
 
+The experimental minimalist serif design is enabled by `personal_style: minimal-serif` in `_config.yml`. Its colors, system font stacks, borders, and spacing live in `assets/css/minimal-serif.css`. A small hook in `_plugins/personal_style.rb` loads this optional stylesheet after the theme styles and versions its URL by file contents. Remove the setting to restore the standard presentation. This adds no new gem-owned template overrides. The published design before this experiment is saved in the `design-baseline-2026-09-30` Git tag.
+
 To replace the portrait, save your image to `assets/img/` and update the `profile` settings in `_pages/about.md`:
 
 ```yaml

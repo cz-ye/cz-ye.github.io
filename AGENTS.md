@@ -12,6 +12,7 @@ Search indexing is enabled at the site owner’s request. Preserve `search_engin
 - `assets/img/publication_preview/`: publication thumbnails; the owner now prefers actual paper figures to generated artwork. Current `-figure.png` files use complete figures or selected panels, preserving scientific content and proportions. Sources and crop details are in `docs/PUBLICATION_IMAGES.md` and `docs/PUBLICATION_FIGURE_SOURCES.json`; source attribution is in `_pages/figure_credits.md`. Earlier generated versions are retained. All 11 publications have sourced thumbnails; the gLM review uses its journal cover (`genomic-language-models-cover.jpg`), and GPN-Star uses the full Figure 1.
 - `_data/cv.yml`: the online CV, using the al-folio RenderCV data format.
 - `_data/socials.yml`: public professional contact links.
+- `assets/css/minimal-serif.css`: optional minimalist serif design, enabled by `personal_style: minimal-serif` in `_config.yml`. `_plugins/personal_style.rb` adds the stylesheet with a content hash to all HTML pages without overriding the theme templates. It uses system serif fonts, muted colors in both themes, and 2rem social icons in place of the base 3rem icons.
 - `assets/img/0U9A5846.jpeg`: current portrait supplied by the site owner.
 - `README.md`: editing, validation, and hosting instructions.
 - `TEMPLATE.md`: template and content provenance.
