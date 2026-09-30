@@ -251,6 +251,13 @@ input:focus-visible {
   outline-offset: 4px;
 }
 
+@media (min-width: 576px) {
+  /* Reserve the portrait column for every biography paragraph, even below the image. */
+  .post article > .profile.float-right + .clearfix > p {
+    width: calc(100% - min(30%, 220px) - 2rem);
+  }
+}
+
 @media (max-width: 575.98px) {
   .post .post-title {
     font-size: 2.25rem;
