@@ -1,0 +1,262 @@
+/* Personal design layer. The al-folio layout and component behavior stay gem-owned. */
+:root {
+  --personal-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --personal-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --global-bg-color: #faf9f6;
+  --global-card-bg-color: #faf9f6;
+  --global-text-color: #30332f;
+  --global-text-color-light: #696d65;
+  --global-theme-color: #4c6656;
+  --global-hover-color: #304b3c;
+  --global-hover-text-color: #faf9f6;
+  --global-divider-color: #dedfd7;
+  --global-code-bg-color: #f0f0e9;
+  --global-footer-bg-color: #faf9f6;
+  --global-footer-text-color: #696d65;
+  --global-footer-link-color: #4c6656;
+  --personal-badge-bg: #eeeee7;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #202320;
+  --global-card-bg-color: #202320;
+  --global-text-color: #e5e6de;
+  --global-text-color-light: #aeb4a8;
+  --global-theme-color: #b2c4b1;
+  --global-hover-color: #d2e0cf;
+  --global-hover-text-color: #202320;
+  --global-divider-color: #3d433c;
+  --global-code-bg-color: #2b302a;
+  --global-footer-bg-color: #202320;
+  --global-footer-text-color: #aeb4a8;
+  --global-footer-link-color: #b2c4b1;
+  --personal-badge-bg: #2b302a;
+}
+
+body {
+  font-family: var(--personal-serif);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--personal-serif);
+  font-weight: 400;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post .post-title {
+  font-size: clamp(2.25rem, 4.5vw, 3rem);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.post-title .font-weight-bold,
+.navbar-brand .font-weight-bold {
+  font-weight: 400;
+}
+
+.post-header .desc,
+.post-header .post-description {
+  color: var(--global-text-color-light);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.post article > .clearfix > p {
+  line-height: 1.75;
+  margin-bottom: 1.15rem;
+}
+
+.post article > h2 {
+  font-size: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.post article > .clearfix > p a,
+.post article > p a {
+  text-decoration: underline;
+  text-decoration-color: var(--global-divider-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.post article > .clearfix > p a:hover,
+.post article > p a:hover {
+  text-decoration-color: currentColor;
+}
+
+.navbar {
+  opacity: 1;
+  font-family: var(--personal-sans);
+  font-size: 0.875rem;
+}
+
+.navbar .navbar-brand {
+  font-family: var(--personal-serif);
+  font-size: 1.25rem;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 1px;
+}
+
+.post .profile img,
+.publications img.preview {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.post .social.about-social {
+  margin: 1.5rem 0 2.25rem;
+}
+
+.post .social.about-social .contact-icons {
+  font-size: 2rem;
+}
+
+.post .social .contact-icons a {
+  display: inline-block;
+  margin-inline: 0.3rem;
+}
+
+.post .social .contact-icons a i::before {
+  color: var(--global-text-color-light);
+}
+
+.post .social .contact-icons a:hover i::before {
+  color: var(--global-theme-color);
+}
+
+.publications h2.bibliography {
+  color: var(--global-text-color-light);
+  font-size: 1.3125rem;
+  text-align: left;
+  padding-top: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.publications ol.bibliography > li {
+  margin-bottom: 2rem;
+}
+
+.publications ol.bibliography li .title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 0.2rem;
+}
+
+.publications ol.bibliography li .author,
+.publications ol.bibliography li .periodical {
+  color: var(--global-text-color-light);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.publications ol.bibliography li .periodical em {
+  color: inherit;
+}
+
+.publications ol.bibliography li .links {
+  margin-top: 0.45rem;
+}
+
+.publications ol.bibliography li .links a.btn {
+  font-family: var(--personal-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  padding: 0.2rem 0.65rem;
+  box-shadow: none;
+  background: transparent;
+}
+
+#bibsearch {
+  font-family: var(--personal-sans);
+  font-size: 0.875rem;
+  color: var(--global-text-color);
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+#bibsearch::placeholder {
+  color: var(--global-text-color-light);
+}
+
+.cv-page .cv .card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.cv-page .cv .card-title {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.cv-page .cv .list-group,
+.cv-page .cv .items,
+.cv-page .cv .list-group-item h6:not(.title) {
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.cv-page .cv .card .list-group-item .badge {
+  color: var(--global-text-color-light) !important;
+  background-color: var(--personal-badge-bg) !important;
+  font-family: var(--personal-sans);
+  font-weight: 400;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.cv-page .cv .cv-contact-label,
+.cv-page .cv .font-weight-bold,
+.cv-page .cv .cv-course strong {
+  font-weight: 600;
+}
+
+footer {
+  font-family: var(--personal-sans);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+}
+
+@media (max-width: 575.98px) {
+  .post .post-title {
+    font-size: 2.25rem;
+  }
+
+  .publications ol.bibliography li .title {
+    margin-top: 0.5rem;
+  }
+}
