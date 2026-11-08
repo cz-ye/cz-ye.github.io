@@ -1,6 +1,6 @@
 /* Personal design layer. The al-folio layout and component behavior stay gem-owned. */
 :root {
-  --personal-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --personal-serif: "Sentient", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   --personal-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --global-bg-color: #faf9f6;
   --global-card-bg-color: #faf9f6;
@@ -57,12 +57,16 @@ h6 {
 
 .post .post-title {
   font-size: clamp(2.25rem, 4.5vw, 3rem);
+  font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 
-.post-title .font-weight-bold,
+.post-title .font-weight-bold {
+  font-weight: 500;
+}
+
 .navbar-brand .font-weight-bold {
   font-weight: 400;
 }
@@ -81,6 +85,7 @@ h6 {
 
 .post article > h2 {
   font-size: 1.75rem;
+  font-weight: 500;
   margin-top: 1.5rem;
 }
 
@@ -158,7 +163,7 @@ h6 {
 
 .publications ol.bibliography li .title {
   font-size: 1.0625rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.45;
   margin-bottom: 0.2rem;
 }
@@ -235,7 +240,7 @@ h6 {
 .cv-page .cv .cv-contact-label,
 .cv-page .cv .font-weight-bold,
 .cv-page .cv .cv-course strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 footer {
