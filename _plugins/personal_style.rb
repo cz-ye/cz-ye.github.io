@@ -11,7 +11,7 @@ Jekyll::Hooks.register [:pages, :documents], :post_render, priority: :low do |pa
   links = [
     '<link rel="preconnect" href="https://api.fontshare.com">',
     '<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>',
-    '<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@400,401,500,501,700,701&amp;display=swap">',
+    '<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@300,301,400,401,500,501,700,701&amp;display=swap">',
     %(<link rel="stylesheet" href="#{href}" data-personal-style="minimal-serif">)
   ].join("\n")
   inserted = page.output.sub!(%r{</head>}i) { |head| "#{links}\n#{head}" }

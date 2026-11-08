@@ -36,7 +36,7 @@ html[data-theme="dark"] {
 body {
   font-family: var(--personal-serif);
   font-size: 1.0625rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -48,7 +48,7 @@ h4,
 h5,
 h6 {
   font-family: var(--personal-serif);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .post-header {
@@ -57,14 +57,14 @@ h6 {
 
 .post .post-title {
   font-size: clamp(2.25rem, 4.5vw, 3rem);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.025em;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 
 .post-title .font-weight-bold {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navbar-brand .font-weight-bold {
@@ -85,7 +85,7 @@ h6 {
 
 .post article > h2 {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 1.5rem;
 }
 
@@ -106,6 +106,7 @@ h6 {
   opacity: 1;
   font-family: var(--personal-sans);
   font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .navbar .navbar-brand {
@@ -163,7 +164,7 @@ h6 {
 
 .publications ol.bibliography li .title {
   font-size: 1.0625rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.45;
   margin-bottom: 0.2rem;
 }
@@ -217,14 +218,14 @@ h6 {
 
 .cv-page .cv .card-title {
   font-size: 1.625rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
 }
 
 .cv-page .cv .list-group,
 .cv-page .cv .items,
 .cv-page .cv .list-group-item h6:not(.title) {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.55;
 }
 
@@ -240,12 +241,13 @@ h6 {
 .cv-page .cv .cv-contact-label,
 .cv-page .cv .font-weight-bold,
 .cv-page .cv .cv-course strong {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 footer {
   font-family: var(--personal-sans);
   font-size: 0.75rem;
+  font-weight: 400;
   line-height: 1.6;
 }
 
